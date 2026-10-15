@@ -19,7 +19,7 @@ elif command == "START":
 elif command == "HELP":
     print("» Showing list of available commands...")
     print("» [STOP] - Stops the current running process")
-    print("»[START] - Starts the process")
+    print("» [START] - Starts the process")
     print("» [HELP] - Shows this window")
     print("» [ADMIN] - Enters administrator mode")
     print("» [ADMIN-HELP] - Shows a list of all available ADMIN commands")
