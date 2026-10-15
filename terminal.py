@@ -30,7 +30,7 @@ def command_logic():
             print("» [VERIFY] - Verify to use ADMIN panel.")
             print("» [ADMIN] - Enters administrator mode.")
             print("» [ADMIN-HELP] - Shows a list of all available ADMIN commands.")
-            print("» [QUIT] - ENDS all processes, and cleans the terminal.")
+            print("» [QUIT] - ENDS all processes.")
         elif command == "VERIFY":
             admin_login = input("» Please enter your ADMIN password...")
             if admin_login == "admin100":
@@ -55,7 +55,6 @@ def command_logic():
             print("» Clearing terminal...")
             print("» Terminal Cleared!")
             print("» Please Restart the Terminal!")
-            print("\n" * 100)
             break
         else:
             print("» Please re-run the program and input a valid command!")
