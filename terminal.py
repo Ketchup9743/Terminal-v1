@@ -1,4 +1,5 @@
 ### Header for Terminal ###
+print("")
 print("                Welcome to your Computer Terminal Program!")
 print("")
 print("=============================================================================")
