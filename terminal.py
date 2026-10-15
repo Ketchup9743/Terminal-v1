@@ -15,7 +15,6 @@ remaining_memory = 512
 remaining_storage = 1032
 ### Header for Terminal ###
 print("                Welcome to your Computer Terminal Program!")
-print("         Here are the statistics for your current running machines...")
 print("")
 print("=============================================================================")
 print("")
