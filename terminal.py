@@ -1,4 +1,6 @@
 ### Header for Terminal ###
+admin = False
+admin_logged_in = False
 print("")
 print("                Welcome to your Computer Terminal Program!")
 print("")
@@ -8,6 +10,8 @@ print("» Type [STOP] to end the process.")
 print("» Type [START] to start the process.")
 print("» Type [HELP] for a list of executable commands.")
 def command_logic():
+    global admin
+    global admin_logged_in
     while True:
         command = input("» COMMAND : ")
         if command == "STOP":
@@ -20,16 +24,31 @@ def command_logic():
             print("» Process Started!")
         elif command == "HELP":
             print("» Showing list of available commands...")
-            print("» [STOP] - Stops the current running process")
-            print("» [START] - Starts the process")
-            print("» [HELP] - Shows this window")
-            print("» [ADMIN] - Enters administrator mode")
-            print("» [ADMIN-HELP] - Shows a list of all available ADMIN commands")
-            print("» [QUIT] - ENDS all processes, and cleans the terminal")
+            print("» [STOP] - Stops the current running process.")
+            print("» [START] - Starts the process.")
+            print("» [HELP] - Shows this window.")
+            print("» [VERIFY] - Verify to use ADMIN panel.")
+            print("» [ADMIN] - Enters administrator mode.")
+            print("» [ADMIN-HELP] - Shows a list of all available ADMIN commands.")
+            print("» [QUIT] - ENDS all processes, and cleans the terminal.")
+        elif command == "VERIFY":
+            admin_login = input("» Please enter your ADMIN password...")
+            if admin_login == "admin100":
+                print("» Successfully logged in!")
+                admin_logged_in = True
+            else:
+                    print("» Incorrect Password! Please try again!")
         elif command == "ADMIN":
-            print("                  ----- ADMININISTRATOR MODE ENABLED ----")
+            if admin_logged_in == True:
+                admin = True
+                print("                  ----- ADMININISTRATOR MODE ENABLED ----")
+            else:
+                print("» User not verified! Please verify with [VERIFY]")
         elif command == "ADMIN-HELP":
-            print("» Showing list of available ADMIN commands")
+            if admin == True:
+                print("» Showing list of available ADMIN commands")
+            else:
+                print("» ADMIN Mode not enabled!")
         elif command == "QUIT":
             print("» Ending all processes...")
             print("» Processes stopped!")
@@ -39,5 +58,5 @@ def command_logic():
             print("\n" * 100)
             break
         else:
-            print("»Please re-run the program and input a valid command!")
+            print("» Please re-run the program and input a valid command!")
 command_logic()
