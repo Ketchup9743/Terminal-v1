@@ -31,10 +31,11 @@ def command_logic():
         elif command == "ADMIN-HELP":
             print("» Showing list of available ADMIN commands")
         elif command == "QUIT":
-            print("»Ending all processes...")
-            print("»Processes stopped!")
-            print("»Clearing terminal...")
-            print("»Terminal Cleared!")
+            print("» Ending all processes...")
+            print("» Processes stopped!")
+            print("» Clearing terminal...")
+            print("» Terminal Cleared!")
+            print("» Please Restart the Terminal!")
             print("\n" * 100)
             break
         else:
