@@ -12,6 +12,7 @@ print("» Type [HELP] for a list of executable commands.")
 def command_logic():
     global admin
     global admin_logged_in
+    global command
     while True:
         command = input("» COMMAND : ")
         if command == "STOP":
@@ -47,6 +48,10 @@ def command_logic():
         elif command == "ADMIN-HELP":
             if admin == True:
                 print("» Showing list of available ADMIN commands")
+                print("» [FILE] - Displays System File Directories")
+                print("» [SETTINGS] - Access Terminal Settings")
+                print("» [ROOT] - Access the ROOT file of the Terminal")
+                print("» [COMP-SPECS] - Displays Computer Specs")
             else:
                 print("» ADMIN Mode not enabled!")
         elif command == "QUIT":
@@ -58,6 +63,56 @@ def command_logic():
             admin = False
             admin_logged_in = False
             break
+        elif command == "FILE":
+            if admin == True:
+                print("System Folders:")
+                print("/boot/")
+                print("/sbin/")
+                print("/lib/")
+                print("/etc/")
+                print("/bin/")
+                print("c:/Windows/")
+                folder_selector = input("Please select a folder to browse its files!")
+                if folder_selector == "/boot/":
+                        print("System Files in /boot/ Directory")
+                        print("/vmlinuz")
+                        print("Select a File to browse its contents")
+                if folder_selector == "/sbin/":
+                        print("System Files in /sbin/ Directory")
+                        print("/init")
+                        print("/fsck")
+                        print("Select a File to browse its contents")
+                if folder_selector == "/lib/":
+                        print("System Files in /lib/ Directory")
+                        print("/ld-linux.so")
+                        print("/libc.so")
+                        print("Select a File to browse its contents")
+                if folder_selector == "/etc/":
+                        print("System Files in /etc/ Directory")
+                        print("/fstab")
+                        print("/passwd")
+                        print("/shadow")
+                        print("/resolv.conf")
+                        print("/hosts")
+                        print("Select a File to browse its contents")
+                if folder_selector == "/bin/":
+                        print("System Files in /bin/ Directory")
+                        print("/bash")
+                        print("/mount")
+                        print("Select a File to browse its contents")
+                if folder_selector == "c:/Windows/":
+                        print("System Files in c:/Windows/ Directory")
+                        print("...")
+                        print("Select a File to browse its contents")
+        elif command == "ROOT":
+            if admin == True:
+                print("...")
+        elif command == "SETTINGS":
+            if admin == True:
+                print("...")
+        elif command == "COMP-SPECS":
+            if admin == True:
+                print("...")
         else:
             print("» Please re-run the program and input a valid command!")
 command_logic()
