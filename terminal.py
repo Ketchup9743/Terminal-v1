@@ -55,6 +55,8 @@ def command_logic():
             print("» Clearing terminal...")
             print("» Terminal Cleared!")
             print("» Please Restart the Terminal!")
+            admin = False
+            admin_logged_in = False
             break
         else:
             print("» Please re-run the program and input a valid command!")
