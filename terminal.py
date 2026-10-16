@@ -1,3 +1,5 @@
+import time
+
 ### Header for Terminal ###
 admin = False
 admin_logged_in = False
@@ -25,6 +27,7 @@ def command_logic():
             print("» Process Started!")
         elif command == "HELP":
             print("» Showing list of available commands...")
+            for _ in range(300000): pass
             print("» [STOP] - Stops the current running process.")
             print("» [START] - Starts the process.")
             print("» [HELP] - Shows this window.")
@@ -36,6 +39,8 @@ def command_logic():
         elif command == "VERIFY":
             admin_login = input("» Please enter your ADMIN password...")
             if admin_login == "admin100":
+                print("» Verifying.... Please wait a few seconds.")
+                time.sleep(1)
                 print("» Successfully logged in!")
                 admin_logged_in = True
             else:
@@ -43,6 +48,8 @@ def command_logic():
         elif command == "ADMIN":
             if admin_logged_in == True:
                 admin = True
+                print("» Verifying user has admin permissions... Please wait a few seconds.")
+                for _ in range(150000): pass
                 print("                  ----- ADMININISTRATOR MODE ENABLED ----")
             else:
                 print("» User not verified! Please verify with [VERIFY]")
@@ -56,9 +63,13 @@ def command_logic():
                 print("» ADMIN Mode not enabled!")
         elif command == "QUIT":
             print("» Ending all processes...")
+            for _ in range(180000): pass
             print("» Processes stopped!")
+            time.sleep(0.5)
             print("» Clearing terminal...")
+            for _ in range(180000): pass
             print("» Terminal Cleared!")
+            for _ in range(750000): pass
             print("» Please Restart the Terminal!")
             admin = False
             admin_logged_in = False
@@ -118,7 +129,57 @@ def command_logic():
                 print("» ADMIN mode not enabled!")
         elif command == "SETTINGS":
             if admin == True:
-                print("...")
+                print("» Viewing System Settings")
+                for _ in range(180000): pass
+                print("» System Update Available")
+                to_update = input("» Update? : Yes | No")
+                if to_update == "Yes":
+                    print("» Starting Update...")
+                    print("» Updating 0GB / 48GB")
+                    for _ in range(170000): pass
+                    print("» Updating 2GB / 48GB")
+                    for _ in range(170000): pass
+                    print("» Updating 5GB / 48GB")
+                    for _ in range(170000): pass
+                    print("» Updating 8GB / 48GB")
+                    for _ in range(170000): pass
+                    print("» Updating 14GB / 48GB")
+                    for _ in range(150000): pass
+                    print("» Updating 16GB / 48GB")
+                    for _ in range(170000): pass
+                    print("» Updating 18GB / 48GB")
+                    for _ in range(170000): pass
+                    print("» Updating 19GB / 48GB")
+                    for _ in range(170000): pass
+                    print("» Updating 21GB / 48GB")
+                    for _ in range(160000): pass
+                    print("» Updating 24GB / 48GB")
+                    for _ in range(170000): pass
+                    print("» Updating 25GB / 48GB")
+                    for _ in range(110000): pass
+                    print("» Updating 27GB / 48GB")
+                    for _ in range(180000): pass
+                    print("» Updating 30GB / 48GB")
+                    for _ in range(150000): pass
+                    print("» Updating 32GB / 48GB")
+                    for _ in range(170000): pass
+                    print("» Updating 33GB / 48GB")
+                    for _ in range(180000): pass
+                    print("» Updating 35GB / 48GB")
+                    for _ in range(180000): pass
+                    print("» Updating 37GB / 48GB")
+                    for _ in range(180000): pass
+                    print("» Updating 40GB / 48GB")
+                    for _ in range(100000): pass
+                    print("» Updating 41GB / 48GB")
+                    for _ in range(160000): pass
+                    print("» Updating 44GB / 48GB")
+                    for _ in range(140000): pass
+                    print("» Updating 47GB / 48GB")
+                    for _ in range(170000): pass
+                    print("» Updating 48GB / 48GB")
+                    for _ in range(170000): pass
+                    print("» Update Complete!")
         elif command == "COMP-SPECS":
             if admin == True:
                 print("» Fetching and Displaying Computer Information")
@@ -132,12 +193,12 @@ def command_logic():
                 print("» Hello! Welcome to your Computer Terminal Assistant!")
                 print("» Respond with one of the following :")
                 print("» Hello - Hi - Hey")
-                chat_input = input("» COMMAND :").upper()
+                chat_input = input("» COMMAND :")
                 if chat_input == "Hi":
                     print("» Hi! How are you?")
                     print("» Respond with one of the following :")
                     print("» Good - Bad - Mid")
-                    chat_input_two = input("» COMMAND :").upper()
+                    chat_input_two = input("» COMMAND :")
                     if chat_input_two == "Good":
                         print("» Thats Good!")
                     elif chat_input_two == "Bad":
@@ -151,7 +212,7 @@ def command_logic():
                     print("» Hello! How are you?")
                     print("» Respond with one of the following :")
                     print("» Good - Bad - Mid")
-                    chat_input_two = input("» COMMAND :").upper()
+                    chat_input_two = input("» COMMAND :")
                     if chat_input_two == "Good":
                         print("» Thats Good!")
                     elif chat_input_two == "Bad":
@@ -164,7 +225,7 @@ def command_logic():
                     print("» Hey! How are you?")
                     print("» Respond with one of the following :")
                     print("» Good - Bad - Mid")
-                    chat_input_two = input("» COMMAND :").upper()
+                    chat_input_two = input("» COMMAND :")
                     if chat_input_two == "Good":
                         print("» Thats Good!")
                     elif chat_input_two == "Bad":
