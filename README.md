@@ -12,6 +12,11 @@
     - Linux python3 terminal.py
 - Enjoy the terminal, Feel free to change it, update it, or fix bugs! Just please don't claim my work as yours, due provide credit to me, Ketchup9743.
 
+##### Requirments in your IDE #####
+- Python 3.12+ Interpreter
+- Python 3 Extension (From Microsoft)
+- The Python 3.12 interpreter can be downloaded here:
+<https://apps.microsoft.com/detail/9ncvdn91xzqp?hl=en-US&gl=US
 
 
 
@@ -25,7 +30,7 @@
 ##### Notes #####
 - If you really like this project, I am happy to take suggestions! 
     - Discord: <user.id@>
-    - Email: <liamlessard40@gmail.com>
+    - Email: <liamlessard40@gmail.com
 - Please Star the project, and follow my Github if you enjoy it!
 
 # Project Started - October 15, 2026 @ 12:14 PM Eastern Time
