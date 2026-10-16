@@ -14,7 +14,7 @@ def command_logic():
     global admin_logged_in
     global command
     while True:
-        command = input("» COMMAND : ")
+        command = input("» COMMAND : ").upper()
         if command == "STOP":
             print("» Stopping current process...")
             print("»")
@@ -32,6 +32,7 @@ def command_logic():
             print("» [ADMIN] - Enters administrator mode.")
             print("» [ADMIN-HELP] - Shows a list of all available ADMIN commands.")
             print("» [QUIT] - ENDS all processes.")
+            print("» [CHAT] - Starts up the Terminal Chat.")
         elif command == "VERIFY":
             admin_login = input("» Please enter your ADMIN password...")
             if admin_login == "admin100":
@@ -126,6 +127,54 @@ def command_logic():
                 print("» Graphics card : 4GB")
                 print("» CPU Cores : 6 vCores")
                 print("» GPU : 8GB")
+        elif command == "CHAT":
+                print("» Starting up your Terminal Chat...")
+                print("» Hello! Welcome to your Computer Terminal Assistant!")
+                print("» Respond with one of the following :")
+                print("» Hello - Hi - Hey")
+                chat_input = input("» COMMAND :").upper()
+                if chat_input == "Hi":
+                    print("» Hi! How are you?")
+                    print("» Respond with one of the following :")
+                    print("» Good - Bad - Mid")
+                    chat_input_two = input("» COMMAND :").upper()
+                    if chat_input_two == "Good":
+                        print("» Thats Good!")
+                    elif chat_input_two == "Bad":
+                        print("» That's not good :(")
+                    elif chat_input_two == "Mid":
+                        print("» Aw :(")
+                    else:
+                        print("» Please provide a valid response!")
+                       
+                elif chat_input == "Hello":
+                    print("» Hello! How are you?")
+                    print("» Respond with one of the following :")
+                    print("» Good - Bad - Mid")
+                    chat_input_two = input("» COMMAND :").upper()
+                    if chat_input_two == "Good":
+                        print("» Thats Good!")
+                    elif chat_input_two == "Bad":
+                        print("» That's not good :(")
+                    elif chat_input_two == "Mid":
+                        print("» Aw :(")
+                    else:
+                        print("» Please provide a valid response!")
+                elif chat_input == "Hey":
+                    print("» Hey! How are you?")
+                    print("» Respond with one of the following :")
+                    print("» Good - Bad - Mid")
+                    chat_input_two = input("» COMMAND :").upper()
+                    if chat_input_two == "Good":
+                        print("» Thats Good!")
+                    elif chat_input_two == "Bad":
+                        print("» That's not good :(")
+                    elif chat_input_two == "Mid":
+                        print("» Aw :(")
+                    else:
+                        print("» Please provide a valid response!")
+                else:
+                    print("» Please provide a valid response!")     
         else:
             print("» Please re-run the program and input a valid command!")
 command_logic()
