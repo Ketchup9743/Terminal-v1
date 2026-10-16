@@ -29,7 +29,7 @@
 
 ### Notes ###
 - If you really like this project, I am happy to take suggestions! 
-    - Discord: <user.id@>
+    - Discord: <_Ketchup9743__>
     - Email: <liamlessard40@gmail.com
 - Please Star the project, and follow my Github if you enjoy it!
 
