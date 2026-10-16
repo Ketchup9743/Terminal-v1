@@ -17,11 +17,11 @@ def command_logic():
         command = input("» COMMAND : ")
         if command == "STOP":
             print("» Stopping current process...")
-            print("")
+            print("»")
             print("» Process Ended!")
         elif command == "START":
             print("» Starting current process...")
-            print("")
+            print("»")
             print("» Process Started!")
         elif command == "HELP":
             print("» Showing list of available commands...")
@@ -100,32 +100,32 @@ def command_logic():
                         print("» Select a File to browse its contents")
                 if folder_selector == "/bin/":
                         print("» System Files in /bin/ Directory")
-                        print("/bash")
-                        print("/mount")
-                        print("Select a File to browse its contents")
+                        print("» /bash")
+                        print("» /mount")
+                        print("» Select a File to browse its contents")
                 if folder_selector == "c:/Windows/":
-                        print("System Folders in c:/Windows/ Directory")
-                        print("/System32/")
-                        print("/Applications/")
+                        print("» System Folders in c:/Windows/ Directory")
+                        print("» /System32/")
+                        print("» /Applications/")
                         window_selector = input("Please Select a Windows Folder!")
                         if window_selector == "/System32/":
-                            print("System Files in /System32/")
-                            print("")
+                            print("» System Files in /System32/")
+                            print("»")
                         elif window_selector == "/Applications/":
-                            print("System Files in /System32/")
+                            print("»System Files in /Applications/")
             else:
-                print("ADMIN mode not enabled!")
+                print("» ADMIN mode not enabled!")
         elif command == "SETTINGS":
             if admin == True:
                 print("...")
         elif command == "COMP-SPECS":
             if admin == True:
-                print("Fetching and Displaying Computer Information")
-                print("Computer RAM : 32GB DDR4")
-                print("Computer Storage : 128GB PCIe 4.0 SSD")
-                print("Graphics card : 4GB")
-                print("CPU Cores : 6 vCores")
-                print("GPU : 8GB")
+                print("» Fetching and Displaying Computer Information")
+                print("» Computer RAM : 32GB DDR4")
+                print("» Computer Storage : 128GB PCIe 4.0 SSD")
+                print("» Graphics card : 4GB")
+                print("» CPU Cores : 6 vCores")
+                print("» GPU : 8GB")
         else:
             print("» Please re-run the program and input a valid command!")
 command_logic()
