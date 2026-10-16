@@ -3,6 +3,14 @@
 - Open up an online, or local python IDE
 - Paste all of the code in, and click RUN
 - Enjoy the terminal!, and update it if you'd like, just please provide credit that the original open source  program was programmed by me, Ketchup9743.
+### If you are hosting your IDE on VSCode! ###
+- Clone/Fork this github Repository
+- Input your SSH or HTTPS key into VSCode
+- open your terminal.py File
+- Run one of the following commands in your terminal
+    - Windows: python terminal.py
+    - Linux python3 terminal.py
+- Enjoy the terminal, Feel free to change it, update it, or fix bugs! Just please don't claim my work as yours, due provide credit to me, Ketchup9743.
 
 
 
