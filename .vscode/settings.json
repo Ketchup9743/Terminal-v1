@@ -1,5 +1,5 @@
 {
-  "peacock.color": "#B19FF1",
+  "peacock.color": "#4A00E0",
   "peacock.affectActivityBar": true,
   "peacock.affectTitleBar": true,
   "peacock.affectStatusBar": true,
@@ -7,6 +7,14 @@
   "peacock.elementAdjustments": {
     "activityBar": "lighten",
     "statusBar": "darken"
+  },
+  "workbench.colorCustomizations": {
+    "activityBar.activeBorder": "#D6C7FF",
+    "activityBar.foreground": "#D6C7FF",
+    "statusBar.foreground": "#D6C7FF",
+    "titleBar.activeForeground": "#D6C7FF",
+    "tab.activeBorder": "#D6C7FF",
+    "tab.activeForeground": "#D6C7FF"
   },
   "workbench.iconTheme": "material-icon-theme",
   "editor.bracketPairs.enabled": true,
