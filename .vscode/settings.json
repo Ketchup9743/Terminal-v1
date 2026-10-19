@@ -1,0 +1,14 @@
+{
+  "peacock.color": "#B19FF1",
+  "peacock.affectActivityBar": true,
+  "peacock.affectTitleBar": true,
+  "peacock.affectStatusBar": true,
+  "peacock.affectAccentBorders": true,
+  "peacock.elementAdjustments": {
+    "activityBar": "lighten",
+    "statusBar": "darken"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.bracketPairs.enabled": true,
+  "editor.guides.bracketPairs": "active"
+}
