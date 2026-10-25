@@ -23,7 +23,7 @@ def commands():
         print("System - login | Allows the user to login to the terminal")
         print("System - sign_out | Allows the user to sign out of their account")
         print("System - enable_admin | Allows the user to enable administrator mode")
-        print("System - kill | Kills the terminal, logging out the user")
+        print("System - panel | Allows the user to view their current panel")
         print("System - settings | Allows the user to see the current settings")
         commands()
         
@@ -34,7 +34,7 @@ def commands():
         else:
             username_input = input("System - Please enter your username")
             password_input = input("System - Please enter your password")
-            if username_input == username_input and password_input == password:
+            if username_input == username and password_input == password:
                 print("System - Logging in...")
                 time.sleep(2)
                 print("System - Logged in.")
@@ -57,9 +57,10 @@ def commands():
             commands()
     
     elif command == "enable_admin":
-        pass
+        adminuser_attempt = input("Input the admin username...")
+        adminpass_attempt = input("Input the admin password...")
     
-    elif command == "kill":
+    elif command == "panel":
         pass
     
     elif command == "settings":
@@ -67,4 +68,4 @@ def commands():
     else:
         print("Invalid command.")
         commands()
-commands()
+commands() 
