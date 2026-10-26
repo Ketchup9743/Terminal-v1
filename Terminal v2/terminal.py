@@ -59,7 +59,23 @@ def commands():
     elif command == "enable_admin":
         adminuser_attempt = input("Input the admin username...")
         adminpass_attempt = input("Input the admin password...")
-    
+        if adminuser_attempt == admin_username and adminpass_attempt == admin_password:
+            is_admin = True
+            print("Admin enabled.")
+            print("Run admin-help to see a list of admin commands.")
+            admin_command = input("Please enter an admin command.")
+            if admin_command == admin-help:
+                print("Showing list of available admin commands")
+                print("ADMIN - admin-help | Shows a list of availaable admin commands")
+                print("ADMIN - admin-settings | Allows the admin to configure terminal settings")
+                print("ADMIN - admin-logout | Logs the user out of the admin account")
+            elif admin_command == admin-settings:
+                pass
+            elif admin_command == admin-logout:
+                pass
+        else:
+            print("Incorrect username and/or password")
+            commands()
     elif command == "panel":
         pass
     
@@ -68,4 +84,39 @@ def commands():
     else:
         print("Invalid command.")
         commands()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 commands() 
